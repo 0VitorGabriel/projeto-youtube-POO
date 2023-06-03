@@ -4,11 +4,11 @@ abstract class Pessoa {
     protected _sexo: String 
     protected _experiencia: Number 
 
-    constructor(nome: String, idade: Number, sexo: String, experiencia: Number) {
+    constructor(nome: String, idade: Number, sexo: String) {
         this._nome = nome 
         this._idade = idade 
         this._sexo = sexo 
-        this._experiencia = experiencia
+        this._experiencia = 0
     }
 
     protected abstract ganharExperiencia(): void
