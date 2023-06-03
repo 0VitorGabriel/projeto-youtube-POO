@@ -11,7 +11,7 @@ abstract class Pessoa {
         this._experiencia = experiencia
     }
 
-    public abstract ganharExperiencia(): void
+    protected abstract ganharExperiencia(): void
 
     public get nome(): String {
         return this._nome
