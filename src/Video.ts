@@ -2,17 +2,17 @@ import AcoesVideo from "./AcoesVideo";
 
 class Video implements AcoesVideo {
     private _titulo: String 
-    private _avaliacao: String
+    private _avaliacao: Number
     private _views: Number 
     private _curtidas: Number 
     private _reproduzindo: Boolean
 
-    constructor(titulo: String, avaliacao: String, views: Number, curtidas: Number, reproduzindo: Boolean) {
+    constructor(titulo: String) {
         this._titulo = titulo 
-        this._avaliacao = avaliacao 
-        this._views = views 
-        this._curtidas = curtidas
-        this._reproduzindo = reproduzindo 
+        this._avaliacao = 1
+        this._views =  0
+        this._curtidas = 0
+        this._reproduzindo = false
     }
 
     play(): void {
@@ -36,35 +36,35 @@ class Video implements AcoesVideo {
     }
 
     public get titulo(): String {
-        return this._titulo;
+        return this._titulo
     }
 
     public set titulo(titulo: String) {
-        this._titulo = titulo;
+        this._titulo = titulo
     }
 
-    public get avaliacao(): String{
-        return this._avaliacao;
+    public get avaliacao(): Number {
+        return this._avaliacao
     }
 
-    public set avaliacao(avaliacao: String) {
-        this._avaliacao = avaliacao;
+    public set avaliacao(avaliacao: Number) {
+        this._avaliacao = avaliacao
     }
 
     public get views(): Number {
-        return this._views;
+        return this._views
     }
 
     public set views(views: Number) {
-        this._views = views;
+        this._views = views
     }
 
     public get curtidas(): Number {
-        return this._curtidas;
+        return this._curtidas
     }
 
     public set curtidas(curtidas: Number) {
-        this._curtidas = curtidas;
+        this._curtidas = curtidas
     }
 
     public get reproduzindo(): Boolean {
