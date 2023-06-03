@@ -4,11 +4,11 @@ class Usuario extends Pessoa {
     private _login: String 
     private _videosAssistidos: Number
 
-    constructor(nome: String, idade: Number, sexo: String, experiencia: Number,login: String, videosAssistidos: Number) {
-        super(nome, idade, sexo, experiencia)
+    constructor(nome: String, idade: Number, sexo: String, login: String) {
+        super(nome, idade, sexo)
 
         this._login = login 
-        this._videosAssistidos = videosAssistidos
+        this._videosAssistidos = 0
     }
 
     public verMaisVideos(): void {
