@@ -1,16 +1,16 @@
 import AcoesVideo from "./AcoesVideo";
 
 class Video implements AcoesVideo {
-    private _titulo: String 
+    private _titulo: String
     private _avaliacao: Number
-    private _views: Number 
-    private _curtidas: Number 
+    private _views: Number
+    private _curtidas: Number
     private _reproduzindo: Boolean
 
     constructor(titulo: String) {
-        this._titulo = titulo 
+        this._titulo = titulo
         this._avaliacao = 1
-        this._views =  0
+        this._views = 0
         this._curtidas = 0
         this._reproduzindo = false
     }
@@ -48,7 +48,9 @@ class Video implements AcoesVideo {
     }
 
     public set avaliacao(avaliacao: Number) {
-        this._avaliacao = avaliacao
+        let media: Number = (Number(this.avaliacao) + Number(avaliacao)) / Number(this.views)
+
+        this._avaliacao = media
     }
 
     public get views(): Number {
