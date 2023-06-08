@@ -16,6 +16,6 @@ console.log(visualizacao0.video)
 
 const visualizacao1 = new Visualizacao(usuario0, video1)
 
-visualizacao0.avaliarNota(8)
+//visualizacao0.avaliarNota(8)
 console.log(visualizacao0.espectador)
 console.log(visualizacao0.video)

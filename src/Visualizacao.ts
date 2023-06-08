@@ -14,10 +14,12 @@ class Visualizacao {
 
     public avaliar(): void {
         this.video.avaliacao = 5
+        this.espectador.ganharExperiencia()
     }
 
     public avaliarNota(nota: Number): void {
         this.video.avaliacao = nota
+        this.espectador.ganharExperiencia()
     }
 
     public avaliarPorcentagem(porcentagem: Number): void {
@@ -34,6 +36,7 @@ class Visualizacao {
         }
 
         this.video.avaliacao = nota
+        this.espectador.ganharExperiencia()
     }
 
     public get espectador(): Usuario {
