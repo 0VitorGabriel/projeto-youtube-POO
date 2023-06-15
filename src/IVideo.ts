@@ -1,7 +1,7 @@
-interface AcoesVideo {
+interface Ivideo {
     play(): void
     pause(): void 
     like(): void
 }
 
-export default AcoesVideo
+export default Ivideo

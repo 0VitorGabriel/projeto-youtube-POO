@@ -1,6 +1,6 @@
-import AcoesVideo from "./AcoesVideo";
+import Ivideo from "./IVideo";
 
-class Video implements AcoesVideo {
+class Video implements Ivideo {
     private _titulo: String
     private _avaliacao: Number
     private _views: Number

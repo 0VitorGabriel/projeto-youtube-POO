@@ -1,6 +1,7 @@
+import IUsuario from "./IUsuario";
 import Pessoa from "./Pessoa";
 
-class Usuario extends Pessoa {
+class Usuario extends Pessoa implements IUsuario {
     private _login: String 
     private _videosAssistidos: Number
 
